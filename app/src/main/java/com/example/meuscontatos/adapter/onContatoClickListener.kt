@@ -1,0 +1,11 @@
+package com.example.meuscontatos.adapter
+
+// Interface que será implementada na Activity para tratar os eventos de clique
+// e usada no Adapter para tratar os eventos de clique
+interface OnContatoClickListener {
+    fun onContatoClick(position: Int)
+
+    // Funções adicionadas para ContextMenu
+    fun onEditarMenuItemClick(position: Int)
+    fun onRemoverMenuItemClick(position: Int)
+}
