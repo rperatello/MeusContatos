@@ -69,16 +69,16 @@ class AutenticacaoActivity : AppCompatActivity() {
                             Toast.makeText(this, "Usuario ${contaGoogle.email} autenticado com sucesso", Toast.LENGTH_SHORT).show()
                             posLoginSucesso()
                         } else {
-                            Toast.makeText(this, "Falha na autenticação Google 3", Toast.LENGTH_SHORT).show()
+                            Toast.makeText(this, "Falha na autenticação Google", Toast.LENGTH_SHORT).show()
                         }
                     }
 
                 } else {
-                    Toast.makeText(this, "Falha na autenticação Google 2", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(this, "Falha na autenticação Google", Toast.LENGTH_SHORT).show()
                 }
 
             } catch (e: ApiException){
-                Toast.makeText(this, "Falha na autenticação Google 1", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, "Falha na autenticação Google", Toast.LENGTH_SHORT).show()
             }
         }
     }
