@@ -194,4 +194,12 @@ class MainActivity : AppCompatActivity(), OnContatoClickListener {
             }
         }
     }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        AutenticadorFirebase.firebaseAuth.signOut()
+        AutenticadorFirebase.googleSignInClient?.signOut()
+        finish()
+    }
+
 }
